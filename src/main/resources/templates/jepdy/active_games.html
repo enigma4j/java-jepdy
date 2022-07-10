@@ -3,11 +3,38 @@
 <div class="container">
  <div class="container-fluid">
     <h1>Active Games</h1>
+
+     {#if registered}
+     <button
+             hx-post="/jepdy/secure/game/newgame"
+             hx-target="#modals-here"
+             hx-trigger="click"
+             class="btn btn-primary"
+             _="on htmx:afterOnLoad wait 10ms then add .show to #modal then add .show to #modal-backdrop">Add New Game</button>
+
+     {/if}
+
     <table class="table table-striped">
     <tbody id="games">
     </tbody>
     </table>
  </div>
 </div>
+<div id="modals-here"></div>
+<script>
+    function closeModal() {
+	var container = document.getElementById("modals-here")
+	var backdrop = document.getElementById("modal-backdrop")
+	var modal = document.getElementById("modal")
+
+	modal.classList.remove("show")
+	backdrop.classList.remove("show")
+
+	setTimeout(function() {
+		container.removeChild(backdrop)
+		container.removeChild(modal)
+	}, 200)
+}
+</script>
 <script src="/jepdy/public/js/active_games.js"></script>
 {/include}

@@ -45,7 +45,7 @@ public class Game extends PanacheMongoEntity {
 
     public static Collection<Game> getActiveGames() {
 
-        return list("status", GameState.started);
+        return listAll(); //list("status", GameState.started);
     }
 
     public void start() {

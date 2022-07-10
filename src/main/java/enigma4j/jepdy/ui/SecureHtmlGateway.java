@@ -1,8 +1,10 @@
 package enigma4j.jepdy.ui;
 
 import enigma4j.Enigma4JAbstractService;
+import enigma4j.jepdy.engine.GameGenerator;
 import enigma4j.jepdy.engine.GameStateBroadcaster;
 import enigma4j.jepdy.model.*;
+import enigma4j.jepdy.ui.forms.NewGameForm;
 import enigma4j.jepdy.ui.forms.ScoreForm;
 import io.quarkus.qute.Location;
 import io.quarkus.qute.Template;
@@ -19,7 +21,7 @@ import java.util.Map;
 
 @Authenticated
 @Path("/jepdy/secure")
-public class SecureHtmlGateway extends Enigma4JAbstractService {
+public class    SecureHtmlGateway extends Enigma4JAbstractService {
 
     @Inject
     GameStateBroadcaster publisher;
@@ -43,6 +45,10 @@ public class SecureHtmlGateway extends Enigma4JAbstractService {
     @Inject
     @Location("jepdy/includes/clue_modal.html")
     Template clue_modal;
+
+    @Inject
+    @Location("jepdy/includes/NewGameModal.html")
+    Template newGame_modal;
 
     @Location("jepdy/includes/gamestate.html")
     Template gamestate;
@@ -275,5 +281,34 @@ public class SecureHtmlGateway extends Enigma4JAbstractService {
         return gamestate.data("game",g,"code",code);
 
     }
+
+    @POST
+    @Path("game/newgame")
+    @Produces(MediaType.TEXT_HTML)
+    public TemplateInstance newGame() {
+
+        Map<String,Object> data=new HashMap();
+        Map<String,Object> errors=new HashMap();
+        data.put("e",errors);
+
+        return newGame_modal.data(data);
+    }
+
+
+    @POST
+    @Path("game/addgame")
+    @Produces(MediaType.TEXT_HTML)
+    public Response addGame(@BeanParam NewGameForm form) {
+
+        Game g= GameGenerator.generate(form);
+        g.start();
+        g.persist();
+        URI rd=URI.create("/jepdy/secure/game/host?code="+g.shortCode);
+
+
+        return Response.temporaryRedirect(rd).build();
+
+    }
+
 
 }

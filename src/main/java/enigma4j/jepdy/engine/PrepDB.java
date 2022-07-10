@@ -39,6 +39,7 @@ public class PrepDB extends Enigma4JAbstractService {
 
         LOG.infof("cats=%d, clues=%d",cats,clues);
 
+        /*
         NewGameForm f=new NewGameForm();
 
         f.name="test game";
@@ -52,6 +53,6 @@ public class PrepDB extends Enigma4JAbstractService {
         g.persist();
 
         LOG.infof("added test game with shortcode %s",g.shortCode);
-
+        */
     }
 }

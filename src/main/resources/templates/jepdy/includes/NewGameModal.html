@@ -1,0 +1,165 @@
+<div id="modal-backdrop" class="modal-backdrop fade show" style="display:block;"></div>
+<div id="modal" class="modal fade show" tabindex="-1" style="display:block;">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Add New Game</h5>
+            </div>
+            <div class="modal-body">
+                <form class="p-4 p-md-5 border rounded-3 bg-light"   hx-encoding="multipart/form-data"  style="color:black;" hx-post="/jepdy/secure/game/addgame" hx-target="this" hx-swap="outerHTML">
+
+                    <div class="form-floating mb-3">
+                        <input type="text" name="name" class="form-control" id="name" placeholder="Name of Game">
+                        <label for="name">Game Name</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <select type="text" name="rounds" class="form-select" id="rounds" placeholder="Number of Rounds">
+                            <option  value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                            <option value="4">Four</option>
+                            <option value="5">Fix</option>
+                            <option selected value="6">Six</option>
+                        </select>
+
+                        <label for="rounds">Rounds</label>
+
+                    </div>
+                    <div class="form-floating mb-3">
+                        <select type="text" name="categories" class="form-select" id="categories" placeholder="Categories per round">
+                            <option value="3">Three</option>
+                            <option selected value="4">Four</option>
+                            <option value="5">Five</option>
+                        </select>
+                        <label for="categories">Categories per Round</label>
+                    </div>
+
+
+                    <div class="form-floating mb-3">
+
+                        <select type="text" name="teams" class="form-select" id="teams" placeholder="Number of Teams">
+                            <option selected value="2">Two</option>
+                            <option value="3">Three</option>
+                            <option value="4">Four</option>
+                            <option value="5">Fix</option>
+                            <option value="6">Six</option>
+                            <option value="7">Seven</option>
+                            <option value="8">Eight</option>
+                            <option value="8">Nine</option>
+                            <option value="10">Ten</option>
+                        </select>
+
+                        <label for="teams">Teams</label>
+                    </div>
+
+                    <div>
+
+                    </div>
+                    <div class="checkbox mb-3">
+                    </div>
+                    <button class="w-30 btn btn-lg btn-primary" onclick="closeModal()"   d type="submit">Add Game</button>
+
+                    <button type="button" class="btn btn-lg  btn-secondary" onclick="closeModal()">Cancel</button>
+
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" onclick="closeModal()">Cancel</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--
+<div id="modal-backdrop" class="modal-backdrop fade show" style="display:block;"></div>
+
+<div id="modal-game" class="modal fade show " tabindex="-1" style="display:block;">
+    <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content jepdyhost ">
+            <div class="modal-header">
+                <h5 class="modal-title">New Game</h5>
+            </div>
+            <div class="modal-body">
+                <form class="p-4 p-md-5 border rounded-3 bg-light"   hx-encoding="multipart/form-data"  style="color:black;" hx-post="/ui/game/add" hx-target="this" hx-swap="outerHTML">
+
+                    <div class="form-floating mb-3">
+                        <input type="text" name="name" class="form-control" id="name" placeholder="Name of Game">
+                        <label for="name">Game Name</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <select type="text" name="rounds" class="form-select" id="rounds" placeholder="Number of Rounds">
+                            <option selected value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                            <option value="4">Four</option>
+                            <option value="5">Fix</option>
+                            <option value="6">Six</option>
+                        </select>
+
+                        <label for="rounds">Rounds</label>
+
+                    </div>
+                    <div class="form-floating mb-3">
+                        <select type="text" name="categories" class="form-select" id="categories" placeholder="Categories per round">
+                            <option value="3">Three</option>
+                            <option selected value="4">Four</option>
+                            <option value="5">Five</option>
+                        </select>
+                        <label for="categories">Categories per Round</label>
+                    </div>
+
+
+                    <div class="form-floating mb-3">
+
+                        <select type="text" name="teams" class="form-select" id="teams" placeholder="Number of Teams">
+                            <option selected value="2">Two</option>
+                            <option value="3">Three</option>
+                            <option value="4">Four</option>
+                            <option value="5">Fix</option>
+                            <option value="6">Six</option>
+                            <option value="7">Seven</option>
+                            <option value="8">Eight</option>
+                            <option value="8">Nine</option>
+                            <option value="10">Ten</option>
+                        </select>
+
+                        <label for="teams">Teams</label>
+                    </div>
+
+                    <div>
+
+                    </div>
+                    <div class="checkbox mb-3">
+                    </div>
+                    <button class="w-30 btn btn-lg btn-primary" type="submit">Add Game</button>
+
+                        <button type="button" class="btn btn-lg  btn-secondary" onclick="closeModal()">Cancel</button>
+
+                </form>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<script>
+    function closeModal() {
+	var container = document.getElementById("new_game_modal")
+	var backdrop = document.getElementById("modal-backdrop")
+	var modal = document.getElementById("modal-game")
+
+	modal.classList.remove("show")
+	backdrop.classList.remove("show")
+
+	setTimeout(function() {
+		container.removeChild(backdrop)
+		container.removeChild(modal)
+	}, 200)
+}
+
+</script>
+
+-->
+

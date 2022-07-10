@@ -13,6 +13,7 @@ import java.util.*;
 
 public class GameGenerator {
 
+    private static final String letters="ABCDEFGHIJKLMNOPQRSTUVWXYZ";
     private static final Logger log = Logger.getLogger(GameGenerator.class);
 
     private static FriendlyIDGenerator codeGenerator;
@@ -76,7 +77,7 @@ public class GameGenerator {
         }
 
         for(int t=0;t<f.teams;t++) {
-            Team team=new Team(""+(t+1));
+            Team team=new Team(""+letters.charAt(t));
             e.teams.add(team);
         }
         return e;

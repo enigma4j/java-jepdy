@@ -20,9 +20,12 @@
     </div>
 
     {#case started}
-    <h3>In Play : Round {game.currentRound}</h3>
+
 
     <div class="container-fluid">
+        <div class="row">
+            <div class="col-12"><h1 class="scorebox text-center">Round {game.currentRound}</h1></div>
+        </div>
         {#for row in game.rounds.get(game.currentRound).rows}
         <div class="row align-items-center">
             <div class="col-4 display-4">{row.category}</div>
@@ -34,7 +37,9 @@
             {/if}
             {/for}
         </div>
+        <hr>
         {/for}
+
     </div>
     <hr>
 
@@ -51,7 +56,7 @@
     <h2>{game.leaderPoints()}</h2>
 
     {/switch}
-    <hr>
+
     {#include jepdy/includes/team_scores}{/include}
 
     <h4>{game.name}</h4>

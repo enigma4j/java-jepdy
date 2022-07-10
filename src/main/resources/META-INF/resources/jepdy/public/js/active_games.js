@@ -11,9 +11,9 @@ if(games)
        console.log(data)
        games.innerHTML=""
         for(var i=0;i<data.length;i++) {
-         games.innerHTML+="<tr><td><a class='btn btn-primary' href='/jepdy/public/game/watch/?code="+
+         games.innerHTML+="<tr><td><a class='btn btn-primary'  target='_blank' href='/jepdy/public/game/watch/?code="+
                           data[i].code+
-                          "'>Watch</a><a class='btn btn-primary' href='/jepdy/secure/game/host?code="+
+                          "'>Watch</a><a class='btn btn-primary'  href='/jepdy/secure/game/host?code="+
                           data[i].code+
                           "'>Host</a></td><td><h6>"+
                           data[i].code+

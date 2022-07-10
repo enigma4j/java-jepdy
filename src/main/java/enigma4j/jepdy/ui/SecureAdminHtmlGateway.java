@@ -9,6 +9,7 @@ import io.quarkus.qute.Location;
 import io.quarkus.qute.Template;
 import io.quarkus.qute.TemplateInstance;
 import io.quarkus.security.Authenticated;
+import io.quarkus.security.identity.SecurityIdentity;
 import io.smallrye.common.annotation.NonBlocking;
 import org.jboss.resteasy.reactive.MultipartForm;
 
@@ -22,7 +23,6 @@ import java.util.Map;
 @Authenticated
 @Path("/jepdy/secure/admin")
 public class SecureAdminHtmlGateway extends Enigma4JAbstractService  {
-
 
 
     @Inject
@@ -49,6 +49,7 @@ public class SecureAdminHtmlGateway extends Enigma4JAbstractService  {
     @Path("home")
     @Produces("text/html")
     public TemplateInstance home() {
+
         return admin.instance();
     }
 
