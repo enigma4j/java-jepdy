@@ -1,0 +1,52 @@
+<div id="modal-backdrop" class="modal-backdrop fade show" style="display:block;"></div>
+<div id="modal" class="modal fade show" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content hostview">
+            <div class="modal-header">
+                <p>{round}/{row}</p>
+                <button type="button" class="btn-close" onclick="closeModal()" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <h5 class="modal-title">Clue</h5>
+                <p>{c.clue}</p>
+                <button type="button" class="btn btn-danger" hx-swap="none" hx-post="/jepdy/secure/game/revealClue?code={code}&round={round}&row={row}&cell={cell}">Reveal</button>
+                <h5 class="modal-title">Answer</h5>
+                <p>{c.answer}</p>
+                <button type="button" class="btn btn-danger" hx-swap="none" hx-post="/jepdy/secure/game/revealAnswer?code={code}&round={round}&row={row}&cell={cell}">Reveal</button>
+                <h5 class="modal-title">Score</h5>
+                <form method="POST" action="/jepdy/secure/game/score">
+                    <div>Winner</div>
+                    <div class="btn-group btn-group-lg" role="group">
+                        <input type="radio" class="btn-check" name="winner" value="0" id="success-outlined" autocomplete="off" checked>
+                        <label class="btn btn-outline-success" for="success-outlined">No winner</label>
+
+                        {#for t in game.teams }
+
+                        <input type="radio" class="btn-check" name="winner" value="{t_count}"  id="w{t_count}" autocomplete="off">
+                        <label class="btn btn-outline-success" for="w{t_count}">{t.name}</label>
+
+                        {/for}
+                        <input type="hidden"  name="code" value="{code}">
+                        <input type="hidden"  name="round" value="{round}">
+                        <input type="hidden"  name="row" value="{row}">
+                        <input type="hidden"  name="cell" value="{cell}">
+
+                    </div>
+                    <div>Loser</div>
+                    <div class="btn-group btn-group-lg" role="group">
+                        <input type="radio"  class="btn-check" name="loser" value="0"  id="none2" autocomplete="off" checked>
+                        <label class="btn btn-outline-danger" for="none2">no loser</label>
+                        {#for t in game.teams }
+                        <input type="radio"  class="btn-check" name="loser" value="{t_count}" id="l{t_count}" autocomplete="off">
+                        <label class="btn btn-outline-success"  for="l{t_count}">{t.name}</label>
+                        {/for}
+                    </div>
+                    <input type="submit" value="Submit" >
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" onclick="closeModal()">Close</button>
+            </div>
+        </div>
+    </div>
+</div>

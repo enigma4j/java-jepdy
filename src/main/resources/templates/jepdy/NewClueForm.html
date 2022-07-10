@@ -1,0 +1,26 @@
+<form method="POST" action="/jepdy/secure/admin/addclue/{catid}">
+    <div class="mb-3">
+        <label for="clue" class="form-label">Clue</label>
+        <input type="text" name="clue" class="form-control" id="clue" aria-describedby="clueHelp">
+        <div id="clueHelp" class="form-text">Clue</div>
+    </div>
+    <div class="mb-3">
+        <label for="answer" class="form-label">Answer</label>
+        <input type="text" name="answer" class="form-control" id="answer" aria-describedby="answerHelp">
+        <div id="answerHelp" class="form-text">Answer in the for "who is", "what is" ...</div>
+    </div>
+
+    <div class="mb-3">
+        <label for="score" class="form-label">Score</label>
+
+        <select id="score" name="score"  aria-describedby="scoreHelp">
+            <option value="100">100</option>
+            <option value="200">200</option>
+            <option value="300">300</option>
+            <option value="400">400</option>
+        </select>
+        <div id="scoreHelp" class="form-text">100 is easy, 400 is hard</div>
+    </div>
+
+    <button class="btn btn-lg btn-primary" type="submit">Register</button>
+</form>

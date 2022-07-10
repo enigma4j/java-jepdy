@@ -1,0 +1,55 @@
+{#include jepdy/outline}
+{#title}Welcome to Java JEP'dy{/title}
+<div class="container">
+<div class="container-fluid">
+    <div class="row">
+
+        <div class="col-2">
+            <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 sun"></div>
+                <div class="col-12 sun"></div>
+                <div class="col-12 sun"></div>
+                <div class="col-12 sun"></div>
+            </div>
+            </div>
+        </div>
+
+        <div class="col-8 align-self-center">
+            <div class="jumbotron">
+            <h1 class="display-4">Welcome to Java JEP'dy</h1>
+                {#if registered}
+                <p class="lead">Play or watch...</p>
+                <p class="lead">
+                    <a class="btn btn-primary btn-lg" href="/jepdy/secure/game/newgame" role="button">Host new Game</a>
+                    <a class="btn btn-primary btn-lg" href="/jepdy/secure/game/play" role="button">Play</a>
+                    <a class="btn btn-primary btn-lg" href="/jepdy/public/games" role="button">Watch a Game</a>
+                </p>
+                {#else}
+                <p class="lead">Playing a game requires github authorisation</p><p>Or you can just watch...</p>
+                <p class="lead">
+                    <a class="btn btn-primary btn-lg" href="/jepdy/secure/game/play" role="button">Sign in</a>
+                    <a class="btn btn-primary btn-lg" href="/jepdy/public/games" role="button">Watch a Game</a>
+
+                    {/if}
+                <p class="lead"><a href="#">Learn more here</a></p>
+
+            </div>
+        </div>
+
+        <div class="col-2">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12 sun"></div>
+                    <div class="col-12 sun"></div>
+                    <div class="col-12 sun"></div>
+                    <div class="col-12 sun"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+</div>
+{/include}

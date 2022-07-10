@@ -1,0 +1,68 @@
+<div>
+    {#if game }
+
+    {#switch game.status}
+    {#case ready}
+
+    <div class="px-4 py-5 my-5 text-center">
+        <h1 class="display-5 fw-bold">{game.name}</h1>
+        <div class="col-lg-6 mx-auto">
+            <p class="lead mb-4">Almost ready. Categories coming up include...</p>
+            <marquee behavior="scroll" direction="left">
+                <div class="display-5">
+                    {#for catsum in game.categorySummary()}
+                    "{catsum}",
+                    {/for}
+                </div>
+            </marquee>
+
+        </div>
+    </div>
+
+    {#case started}
+    <h3>In Play : Round {game.currentRound}</h3>
+
+    <div class="container-fluid">
+        {#for row in game.rounds.get(game.currentRound).rows}
+        <div class="row align-items-center">
+            <div class="col-4 display-4">{row.category}</div>
+            {#for cell in row.cells}
+            {#if cell.used}
+            <div class="col-2 display-1"></div>
+            {#else}
+            <div class="col-2 display-1">{cell.value}</div>
+            {/if}
+            {/for}
+        </div>
+        {/for}
+    </div>
+    <hr>
+
+    {#case showClue}
+    {#include jepdy/includes/show_clue}{/include}
+
+    {#case showAnswer}
+    {#include jepdy/includes/show_answer}{/include}
+
+    {#case finished}
+    <h3>Game finished</h3>
+
+    <h1>The winner is {game.leader()}</h1>
+    <h2>{game.leaderPoints()}</h2>
+
+    {/switch}
+    <hr>
+    {#include jepdy/includes/team_scores}{/include}
+
+    <h4>{game.name}</h4>
+
+
+    {#else}
+
+    <div class="px-4 py-5 my-5 text-center">
+        <h6>NO GAME</h6>
+    </div>
+
+
+    {/if}
+</div>

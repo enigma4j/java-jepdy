@@ -1,0 +1,34 @@
+body {
+  background-color: rgb(38,48,112);
+  color: rgb(255,206,9);
+}
+
+h6 {
+ color: rgb(255,206,9);
+}
+
+.jepdyhost {
+background-color: rgb(38,48,112);
+  color: rgb(255,206,9);
+
+}
+
+.scorebox {
+   background-color: red;
+ color: rgb(255,206,9);
+}
+.sun {
+  display:inline-block;
+  border-radius:50%;
+  height:100px;
+  width:100px;
+  background:orange;
+  box-shadow: 0 0 10px orange,
+                0 0 30px orange,
+                0 0 100px yellow,
+                inset 0 0 40px yellow;
+  z-index:12;
+  align:center;
+  z-index:-99;
+  margin-top: 30px;
+}

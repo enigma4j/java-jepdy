@@ -1,0 +1,1263 @@
+﻿#
+# Badges and Lanyards!
+#
+
+category: Badges & lanyards
+title: Anything regarding Java conferences
+
+answer: what is BOF (birds of a feather)
+attrib: anon
+score: 100
+clue: A style of conference presentation where the like minded flock together
+
+answer: What is JavaOne
+attrib: anon
+score: 100
+clue: This west coast conference was the place to be until 2017
+
+answer: Who are the Java Champions
+attrib: anon
+score: 200
+clue: A group of ‚Äòtechnology leaders‚Äô sponsored by Oracle, who recently held their own online conference to an audience of 14 million in January of 2022.
+
+answer: What is Devoxx UK
+attrib: anon
+score: 200
+clue: A 3 day conference usually held in May in London
+
+answer: What is Voxxed Days
+attrib: anon
+score: 300
+clue: A sucessful community program related to Devoxx
+
+#
+category: Deprecated
+title: Rarely used features
+
+answer: What is java.applet.Applet?
+attrib: anon
+score: 200
+clue: This class was deprecated in Java 11, it extends Panel and is designed to make a small program meant to run inside another application. It is designed to be the superclass of any such program embedded in a web page.
+
+answer: Greenthreads
+attrib: anon
+score: 300
+clue: It was green in the beginning and now comes back in a different form.
+
+answer: What are Applets
+attrib: anon
+score: 300
+clue: Java original contribution to animate the web
+
+answer: What is sun.misc.UnSafe
+attrib: anon
+score: 300
+clue: Using this class is contentious and often unwise
+
+answer: What is SecureRandom.getinstanceStrong()
+attrib: anon
+score: 300
+clue: A feature of Java 8 you‚Äôve probably not heard of, this method ensures you get the strongest random number generator available to the JVM.
+
+answer: What is com.sun.jdi.InvalidLineNumberException?
+attrib: anon
+score: 400
+clue: An exception depecrated as of Java 11 that would be thrown when a requested operation could not be completed because a specified line number was wrong
+
+answer: What is Date.toInstant()?
+attrib: anon
+score: 400
+clue: A feature of Java 8 you‚Äôve probably never heard of, this method converts a Date object from previously used API‚Äôs to an Instant.
+
+answer: What is Prism?
+attrib: anon
+score: 400
+clue: The Part of the JavaFX Graphics system used to render jobs. It is responsible for rasterization and rendering of JavaFX scenes
+
+#
+category: Devil is in the details
+title: low level features like native methods, compiler stuff etc.
+
+answer: What is RMI
+attrib: anon
+score: 100
+clue: A technique for calling at a distance
+
+answer: What is JitWatch
+attrib: anon
+score: 100
+clue: This tool observes and presents the actions of the Hotspot compiler
+
+answer: What is a Java Native Method?
+attrib: anon
+score: 200
+clue: A java method whose implementation is also written in another programming language such as C/C++
+
+answer: What is 64 bit
+attrib: anon
+score: 300
+clue: +/- 9,223,372,036,854,775,808
+
+answer: What is Finalisation
+attrib: anon
+score: 300
+clue: This feature has been known to resurrect dead java objects
+
+answer: What is volatile
+attrib: anon
+score: 300
+clue: This capricious, elusive and erratic modifier offers a lite form of synchronization
+
+answer: What is CAFEBABE
+attrib: anon
+score: 300
+clue: This cheeky hex value adorns all class files
+
+answer: What is Externalizable
+attrib: anon
+score: 300
+clue: The only official subinterface of Serializable
+
+answer: What is Erasure
+attrib: anon
+score: 300
+clue: A generic complaint or an English pop band from 1985
+
+answer: What is Shenandoah
+attrib: anon
+score: 300
+clue: Did James Stewart's classic civil war film of 1965 inspire this garbage collector
+
+answer:  What is Just in Time?
+attrib: anon
+score: 300
+clue: This compiler which comes as a component of the Java Runtime environment helps improve the performance of Java applications at run time
+
+answer: What is space
+attrib: anon
+score: 400
+clue: Any character whose codepoint is less than or equal to ‚ÄòU+0020‚Äô
+
+answer: What is -g?
+attrib: anon
+score: 400
+clue: This standard Javac option generated all debugging information
+
+answer: What is JNI?
+attrib: anon
+score: 400
+clue: The interface that allows java code running in the JVM to be called and called by Native applications
+
+#
+category: Java through the ages
+title: History of Java, people, places and techologies
+
+answer: what is Java
+attrib: anon
+score: 100
+clue: Released on January 23, 1996, this technology has changed the world
+
+answer: What is AdoptOpenJDK
+attrib: anon
+score: 100
+clue: Superceeded by Adoptium this project gained much support from the community
+
+answer: Who is James Gosling ?
+attrib: anon
+score: 100
+clue: Canadian computing scientist best known as the lead designer behind Java ?
+
+answer: What is Oak?
+attrib: anon
+score: 200
+clue: A discontinued language that would later evolve into Java, named for a tree which stood outside the lead developers office?
+
+answer: What is 'Oak'? (or What is 'Green'?)
+attrib: anon
+score: 300
+clue: This name was considered for the language before Sun ultimately settled on 'Java'.
+
+answer: What is Tiger
+attrib: anon
+score: 300
+clue: The code name for Java 5
+
+answer: What is IcedTea
+attrib: anon
+score: 300
+clue: This historic project was designed to allow building of OpenJDK without proprietary software
+
+answer: What is Java Ranch? / What is javaranch.com?
+attrib: anon
+score: 300
+clue: In a world without StackOverflow, this was 'a friendly place for Java greenhorns' and THE place to get your Java questions answered.
+
+answer: What is WORA (Write once, run anywhere)
+attrib: anon
+score: 300
+clue: An ancronim for the original promise of Java
+
+answer: What is serialVersionUID.
+attrib: anon
+score: 300
+clue: The most common static final field name
+
+answer: What is NMI
+attrib: anon
+score: 400
+clue: The precursor to JNI
+
+answer: What is classic
+attrib: anon
+score: 400
+clue: the name for the Java codebase prior to Hotspot
+
+answer: What is 1.3.0
+attrib: anon
+score: 400
+clue: Java Naming and Directory Interface (JNDI) API
+
+answer: What is Java Ring
+attrib: anon
+score: 400
+clue: Probably the first Java jewellery
+
+answer: What is 1996
+attrib: anon
+score: 400
+clue: The year when JDK 1.0 was released
+
+answer:
+attrib:
+category: JEP'dy!
+title: Java Enhancement Proposals and other future features
+
+answer:  What is Markdown
+attrib: anon
+score: 100
+clue: A language used to add formatting to plain text and the language whish should be used to submit JEP documents
+
+answer: What are sealed classes?
+attrib: anon
+score: 200
+clue: JEP 409 now a finalized feature of Jdk 17, the feature allows classes to restrict what other classes and interfaces can extend them
+
+answer: Virtual threads (Project Loom)
+attrib: anon
+score: 300
+clue: This concurrency innovation may render thread pools obsolete
+
+answer: What is JEP 0
+attrib: anon
+score: 300
+clue: The index of all JDK Enhancement Proposals,
+
+answer: What is Nashorn
+attrib: anon
+score: 300
+clue: In Java 15 we said goodbye to this German rhinoceros
+
+answer: What are Text Blocks
+attrib: anon
+score: 300
+clue: This new feature in Java 15 made String expressions just  a little  tidier
+
+answer: Project Loom
+attrib: anon
+score: 300
+clue: This project which will introduce lightweight, efficient threads managed by the Java Virtual.
+
+answer: What is Project  Jigsaw
+attrib: anon
+score: 300
+clue: The openjdk project name for JSR 376 gave everyone a bit of a puzzle
+
+answer: What is Java 100
+attrib: anon
+score: 400
+clue: Expected to be announced in 2063
+
+answer: What are hidden classes
+attrib: anon
+score: 400
+clue: Introduced  by JEP 371 and intended for use by frameworks that generate classes at run time and use them indirectly
+
+answer: What is universal Generics?
+attrib: anon
+score: 400
+clue: A JEP draft which proposes an effert to unify the treatment of reference to primitive types ingeneric code
+
+answer: What is Simple Web Server
+attrib: anon
+score: 400
+clue: JEP 408 - provides a command line tool to start a minimal web server that serves static files only
+
+category: Made for the spotlight
+title: conference speakers, Java Champions, community organisers
+
+answer: Who is Josh Long
+attrib: anon
+score: 100
+clue: This Spring guru is certainly not over extended
+
+answer: Who is Duke
+attrib: anon
+score: 100
+clue: Java's very own cartoon character
+
+answer: Who is Emily Jiang
+attrib: anon
+score: 300
+clue: IBMs very own MicroProfile dynamo
+
+answer: Who is Grace Jansen
+attrib: anon
+score: 300
+clue: This IBM speaker is known for their natural analogies
+
+answer: Who is Trish Gee
+attrib: anon
+score: 300
+clue: not quite rocket powered champion of the IDE
+
+answer: Who is Andrzej Grzesik?
+attrib: anon
+score: 300
+clue: A prolific conference speaker, who currently works for Revolut and is a member of the Polish Software Engineering professionals Association and was previously a Staff engineer at Ebay.
+
+answer: Who is Gail Anderson?
+attrib: anon
+score: 400
+clue: Java Champion, Past member of the Netbeans dream team and contributing author The Definitive Guide to Modern Java Clients with JavaFX
+
+answer: Who is Maximiliano Firtman?
+attrib: anon
+score: 400
+clue: Author of Programming the mobile Web and High Performance Mobile Web.
+
+#
+category: Modern languages
+title: Alternate JVM languages
+
+answer: What is Clojure?
+attrib: anon
+score:
+clue: A popular lisp programming language used on the java platform which while having its initial release in 2007 had its first stable release in 2009 and its most recent release (1.10.3) on March 4 2021
+
+answer: What is Scala?
+attrib: anon
+score:
+clue: A statically typed general purpose programming language which when created in 2004 was designed to address the criticisms of java. It can use Javas libraries, is object orientated and uses the curly-brace syntax.
+
+answer: What is Fantom?
+attrib: anon
+score:
+clue: A general purpose language which runs in the JRE created by Brian and Andy Frank in 2005 it aims to blend together static and dynamic typing
+
+answer: What is Groovy?
+attrib: anon
+score:
+clue: A dynamic programming language that allows static checking, and includes the save navigation operator (preventing a Null pointier exception from occurring.) It is licenced by Apache
+
+category: Not invented here
+title: Java frameworks & libraries
+
+answer: What is apache commons
+attrib: anon
+score: 100
+clue: This ‚Äòswiss army library‚Äô is made up of 43 modular libraries and extends many core Java libraries ?
+
+answer: What is JAXB?
+attrib: anon
+score: 100
+clue: A separate library used specifically for processing and dealing with XML
+
+answer: What is Supersonic, Subatomic, Java
+attrib: anon
+score: 100
+clue: The tagline for Quarkus?
+
+answer: What is RXJava?
+attrib: anon
+score: 200
+
+answer: A library which helps implement Reactive Extensions using observables
+answer: What is Hudson
+attrib: anon
+score: 300
+clue: A winner of a Duke's Choice Award in 2008 this technology has been replaced by its more debonair  younger brother
+
+answer: What is H2
+attrib: anon
+score: 300
+clue: This database engine sounds like an HTML tag
+
+answer: What is PostgreSQL
+attrib: anon
+score: 300
+clue: This database has an Elephant for an icon
+
+answer: What is Mockito?
+attrib: anon
+score: 300
+clue: The most widely used mocking library in Java
+
+answer: What are Regular Expressions
+attrib: anon
+score: 400
+clue: Invented in 1951 and added to Java in 2002, it adds organised reconnaissance
+
+answer: What is Quarkus
+attrib: anon
+score: 400
+clue: It was internally called Protean
+
+category: Oh, the places we've been
+title: geographical locations that have been important in Java's history
+
+answer: What is Cupertino California?
+attrib: anon
+score: 200
+clue: The city where offices where Javasoft moved to after joining Sun Microsystems in April 1996, Offices which sat across the street from Apple‚Äôs R&D complex at the time
+
+answer: What is Indonesia?
+attrib: anon
+score: 200
+clue: The place where java Coffee, for which this programming language is named, comes from?
+
+answer: What is San Jose
+attrib: anon
+score: 300
+clue: This city, the largest in North California, was the birth place of Java
+
+answer: What is Calgary, Canada
+attrib: anon
+score: 300
+clue: The place where Founder of java was born
+
+answer: What is the Gusev Crater
+attrib: anon
+score: 400
+clue: The place on Mars where the spirit rover (which NASA used java to Control) landed
+
+#
+category: Java Builders
+title: People who had a large influence on the language
+
+answer: Who is Mark Reinhold
+attrib: anon
+score: 100
+clue: Just like the Matrix, Java has a Chief Architect
+
+answer: Who Is Bill Joy?
+attrib: anon
+score: 100
+clue: The cheery named cofounder of Sun Microsystems who invented a version of UNIX that used TCP/IP
+
+answer: Who is Doug Lea?
+attrib: Stuart Marks
+score: 200
+clue: He's the author of a popular book 'Concurrent Programming in Java' and he developed the java.util.concurrent package.
+
+answer: Who is Stuart Marks
+attrib: anon
+score: 300
+clue: Their alter ego is Dr Deprecator
+
+answer: Who is Brian Goetz
+attrib: anon
+score: 300
+clue: The current Java Language Architect is well know for deep presentations on the Java language
+
+answer: Who is Kent Beck?
+attrib: anon
+score: 300
+clue: The creator of the Extreme Programming and Test Driven Development software development methodologies, also the cocreator of the Junit testing framework
+
+answer: Who is Rod Johnosn?
+attrib: anon
+score: 300
+clue: The founder of Spring Framework, and wrote the best selling Expert One-on-One J2EE Design and Development
+
+answer: Who is Guy Steele?
+attrib: Stuart Marks
+score: 300
+clue: A veteran of programming language books on Lisp and C, he was one of the first editors of the Java Language Specification
+
+answer: Who is Jonathan Schwartz
+attrib: anon
+score: 400
+clue: Famous for their haiku resignation tweet from Sun
+
+answer: Who is Joe Darcy
+attrib: anon
+score: 400
+clue: This Sun engineer was lead for Project Coin
+
+answer: Who is Guy Lewis Steele Jr.
+attrib: anon
+score: 400
+clue: Someone who has worked for Sun, and Oracle and has helped develop *Lisp, C* and Java
+
+#
+category: Semicolon expected
+title: Java syntax, keywords, reserved words etc
+
+answer: What is Autoboxing
+attrib: anon
+score: 100
+clue: the automatic conversion between primitive types and objects
+
+answer: What is bytecode
+attrib: anon
+score: 100
+clue: The instruction set for the JVM
+
+answer: What is Serialisation
+attrib: anon
+score: 100
+clue: Implementing this interface without care  can make your class  vulnerable
+
+answer: What is main
+attrib: anon
+score: 100
+clue: The entry point for Java applications
+
+answer: What is False
+attrib: anon
+score: 100
+clue: null is a class
+
+answer: what is javadoc
+attrib: anon
+score: 100
+clue: This tool does not actually heal you java code
+
+answer: What is Var?
+attrib: anon
+score: 100
+clue: A keyword introduced in Java 10
+
+answer: What is Volatile?
+attrib: anon
+score: 200
+clue: The keyword used to indicate that an attribute is not cached thread-locally
+
+answer: What is Overloading?
+attrib: anon
+score: 200
+clue: This feature allows different methods to have same name, but different signatures
+
+answer: What is CAFEBABE?
+attrib: anon
+score: 300
+clue: The first four bytes of the Java class file format in hexadecimal format.
+
+answer: What is float
+attrib: anon
+score: 300
+clue: This primative can hold values to 6 decimal places
+
+answer: What is NoSuchMethodError?
+attrib: anon
+score: 300
+clue: The Runtime Error you‚Äôd receive if you removed the static modifier from the main method in Java
+
+answer: What is true
+attrib: anon
+score: 400
+clue: UTF8's longest single byte sequence  is 6 bytes
+
+#
+category: The big picture
+title: high level features like lambdas, streams, serialisation, polymorphism etc.
+
+answer: JShell
+attrib: anon
+score: 100
+clue: An interactive tool to evaluate declarations, statements and expressions
+
+answer: Lambda expressions
+attrib: anon
+score: 100
+clue: A language construct that implements a method defined by a functional interface
+
+answer: arrays
+attrib: anon
+score: 100
+clue: It looks like a primitive data type but is actually a class.
+
+answer: what is JFR (Java Flight Recorder)
+attrib: anon
+score: 100
+clue: In other situations this command line tool might be orange
+
+answer: What is Gradle?
+attrib: anon
+score: 100
+clue: This multi-language build system is the default build tool in Android Studio.
+
+answer: What is polymorphism?
+attrib: anon
+score: 100
+clue: The java concept which allows you to extend the base functionality of a superclass?
+
+answer: What is lambdas?
+attrib: anon
+score: 200
+clue: Nameless short blocks of code which take parameters and return a value
+
+answer: What is deserialization?
+attrib: anon
+score: 200
+clue: The mechanism which allows a byte stream to be turned into an object
+
+answer: what is jdb
+attrib: anon
+score: 300
+clue: this command line tool helps find bugs
+
+answer: What is an incremental build system.
+attrib: anon
+score: 300
+clue: This kind of build system optimizes builds into individual phases which can be skipped if their outputs are up-to-date from a previous build.
+
+answer: What is the stream API?
+attrib: anon
+score: 300
+clue: This feature in Java 8 this is an API used to process collections of objects. It supports various methods that can be pipelined to produce the desired result
+
+#
+category: Cryptic Keywords
+title: cryptic scores that match Java language reserved words
+
+answer: abstract
+attrib: anon
+score: 100
+clue: nonconcrete
+
+answer: assert
+attrib: anon
+score: 100
+clue: profess
+
+answer: boolean
+attrib: anon
+score: 100
+clue: true or false
+
+answer: break
+attrib: anon
+score: 100
+clue: snap
+
+answer: byte
+attrib: anon
+score: 100
+clue: 8 bit
+
+answer: class
+attrib: anon
+score: 100
+clue: a group of students
+
+answer: continue
+attrib: anon
+score: 100
+clue: advance
+
+answer: else
+attrib: anon
+score: 100
+clue: instead
+
+answer: enum
+attrib: anon
+score: 100
+clue: to name things separately, one by one
+
+answer: case
+attrib: anon
+score: 300
+clue: small luggage
+
+answer: catch
+attrib: anon
+score: 300
+clue: a childs game
+
+answer: char
+attrib: anon
+score: 300
+clue: British slang for tea
+
+answer: default
+attrib: anon
+score: 300
+clue: nonpayment
+
+answer: do
+attrib: anon
+score: 300
+clue: there is no try
+
+answer: double
+attrib: anon
+score: 300
+clue: dead ringer
+
+answer: what is strictfp
+attrib: anon
+score: 300
+clue: This keyword forces a  no nonsense approach to  calculations
+
+answer: const
+attrib: anon
+score: 400
+clue: not changing or varying
+
+#
+category: Gone but not forgotten
+title: Java projects from history
+
+answer: What is Project Coin
+attrib: anon
+score: 100
+clue: Pocket change anyone?
+
+answer: What is Detroit
+attrib: anon
+score: 100
+clue: Motor City inspired OpenJDK project
+
+answer: What is Jigsaw
+attrib: anon
+score: 100
+clue: Type of puzzle
+
+answer: What is Lambda
+attrib: anon
+score: 100
+clue: In physics this project would be a sub atomic particle
+
+answer: What is Valhalla
+attrib: anon
+score: 200
+clue: Named after the Norse gods hall of the slain
+
+answer: What is IcedTea
+attrib: anon
+score: 300
+clue: The opposite of Hot Coffee?
+
+answer: What is Project Amber
+attrib: anon
+score: 300
+clue: Unlike it 's prehistoric and decorative namesake this OpenJDK project is very much alive.
+
+answer: What is project panama
+attrib: anon
+score: 300
+clue: Probably not named after head gear this project aims to help Java developer go native
+
+answer: What is project Verona
+attrib: anon
+score: 400
+clue: This Itallian sounding project gave us standardised Java version numbers
+
+answer: What is Lilliput
+attrib: anon
+score: 400
+clue: The score's in the name - downsizing Java object headers
+
+category: Here there be Snarks
+title: simple true/false scores for real or fake classes
+
+answer: What is true
+attrib: anon
+score: 100
+clue: java.lang.ref.PhantomReference
+
+answer: what is true
+attrib: anon
+score: 100
+clue: java.lang.System.Logger
+
+answer: What is false  - thinking of WeakHashMap perhaps?
+attrib: anon
+score: 100
+clue: java.util.WeakHashedMap
+
+answer: What is true
+attrib: anon
+score: 300
+clue: java.util.concurrent.locks.AbstractOwnableSynchronizer
+
+answer: What is false (not thinking of java.lang.NullPointerException?)
+attrib: anon
+score: 400
+clue: java.io.NullPointerException
+
+category: Logic Bombs
+title: simple true/false scores
+
+answer: TRUE
+attrib: anon
+score: 100
+clue: Double.NEGATIVE_INFINITY < Double.MIN_VALUE
+
+answer: FALSE
+attrib: anon
+score: 100
+clue: -1 % 2 == 1
+
+answer: TRUE
+attrib: anon
+score: 100
+clue: (byte)(double)(int)(char)(byte)-1 == -1
+
+answer: what is false
+attrib: anon
+score: 100
+clue: true  ? false : true
+
+answer: What is true
+attrib: anon
+score: 100
+clue: !true  ? !false : true
+
+answer: What is false
+attrib: anon
+score: 100
+clue: a < a++
+
+answer: What is false.   (Year.MAX_VALUE= 999999999)
+attrib: anon
+score: 300
+clue: java.time.Year.MAX_VALUE == 9999
+
+answer: What is true
+attrib: anon
+score: 300
+clue: (--a - a++) == 0
+
+answer: What is true
+attrib: anon
+score: 400
+clue: java.rmi.registry.Registry.REGISTRY_PORT ==  1099
+
+#
+category: Billly's SipOfJava!
+
+answer: triple double quotes
+attrib: BK
+score: 100
+clue: What characters do you use to delimit a text block?
+
+answer: instanceof
+attrib: BK
+score: 100
+clue: This feature was the first to implement pattern matching in Java
+
+answer: Record
+attrib: BK
+score: 100
+clue: This new feature added in Java 16 allows a data carrier class to be declared in a single line
+
+answer: JDK Flight Recorder (JFR)
+attrib: BK
+score: 100
+clue: This JDK tool for recording the behavior of a JVM is inspired from an avionics recording device
+
+answer: Joda time
+attrib: BK
+score: 200
+clue: The date and time API introduced in JDK 8 was designed in part to replace which popular third party date and time library?
+
+answer: App CDS
+attrib: BK
+score: 200
+clue: Added in JDK 10, this feature can improves startup times by creating a pre-processed archive of application class data.
+
+answer: jdeprscan
+attrib: BK
+score: 200
+clue: This JDK tool could be used to scan Java source classes and jars for deprecated APIs
+
+answer: yield
+attrib: BK
+score: 300
+clue: This restricted identifier can be used to return a value out of a switch expression
+
+answer:  unix-domain sockets
+attrib: BK
+score: 300
+clue: Added in JDK 16, this feature can allow for fast communication between two JVM processes on the same host
+
+answer: JDK 11
+attrib: BK
+score: 300
+clue: JEP 330 added the ability for the java command to launch a single-file source-code application. What version of the JDK was this JEP introduced in?
+
+#
+category: Billy Korando's mensa challenge
+
+answer: non-sealed
+attrib: BK
+score: 400
+clue: This is the first hyphentanted keyword to be added to Java
+
+answer: What is Get
+attrib: BK
+score: 400
+clue: When using Optional, it is highly recommended to avoid this method for retrieving value contained within the Optional
+
+answer:  backslash
+attrib: BK
+score: 400
+clue: When using text blocks, adding this character to the end of the line will suppresses the insertion of a new line
+
+answer: Flow scope
+attrib: BK
+score: 400
+clue: When using pattern matching for instance of, what scope is the pattern variable assigned to when the predicate is true?
+
+answer: A reserved type name
+attrib: BK
+score: 400
+clue: Per the Java language specification var is not a keyword, but is instead...
+
+answer:  value based class
+attrib: BK
+score: 400
+clue: The jdk classes, Long, Optional, and Year, are examples of what concept introduce in Java 8?
+
+#
+category: Java Platform
+title: JVM, Language, API
+
+answer: What is finalize()?
+attrib: Stuart Marks
+score: 100
+clue: This is the only method of java.lang.Object ever to have been deprecated.
+
+answer: What is a Spliterator?
+attrib: Stuart Marks
+score: 100
+clue: It's like an Iterator, but it can be split.
+
+answer: What is Lambda?
+attrib: Stuart Marks
+score: 100
+clue: This enormously popular language feature was named after a letter of the Greek alphabet.
+
+answer: What is URL? (or java.net.URL)
+attrib: Stuart Marks
+score: 100
+clue: This infamous networking class performs a DNS lookup when you call equals() on it.
+
+answer: What is CopyOnWriteArrayList?
+attrib: Stuart Marks
+score: 200
+clue: This collection class is a List that makes a complete copy of itself whenever it is modified.
+
+answer: What is a daemon thread?
+attrib: Stuart Marks
+score: 200
+clue: This kind of thread doesn't keep the JVM alive even if it is still running.
+
+answer: What is var?
+attrib: Stuart Marks
+score: 200
+clue: The full name for this feature is Local Variable Type Inference, but everybody refers to it by this keyword (which is actually a 'reserved type name').
+
+answer: What are Thread.stop(), suspend(), and resume()? [destroy() is also acceptable, though it wasn't actually deprecated until later]
+attrib: Stuart Marks
+score: 300
+clue: These methods are inherently dangerous and were among the first methods of the Thread class to be deprecated in JDK 1.2.
+
+answer: What is a marker interface?
+attrib: Stuart Marks
+score: 300
+clue: This is the name for a kind of interface that has no fields or methods.
+
+#
+category: Dr Depreciators brainaches
+
+answer: What is invokedynamic?
+attrib: Stuart Marks
+score: 300
+clue: This is the only bytecode added to the Java Virtual Machine specification after version 1.0.
+
+answer: What are invokedynamic, invokestatic, invokevirtual, invokeinterface, and invokespecial.
+attrib: Stuart Marks
+score: 300
+clue: These are the five bytecodes that invoke something.
+
+answer: What is NavigableSet? (SortedSet is also acceptable)
+attrib: Stuart Marks
+score: 400
+clue: This Collection sub-interface keeps its elements in an ordering induced by a comparison method.
+
+answer: What is StringIndexOutOfBoundsException (be strict! IndexOutOfBoundsException and ArrayIndexOutOfBoundsException aren't acceptable)
+attrib: Stuart Marks
+score: 400
+clue: This is the exact exception type that is thrown when you call charAt(-1) on any string.
+
+answer: What are Throwable and ThreadDeath?
+attrib: Stuart Marks
+score: 400
+clue: They are two classes that can be caught or thrown whose names do not end in 'Exception' or 'Error'.
+
+answer: What are [any three of] Serial, Parallel, CMS, G1, ZGC, Shenandoah, Epsilon. [change the number to adjust the difficulty; I'd still accept CMS even though it's been removed, as it's still present in JDK 8 and JDK 11]
+attrib: Stuart Marks
+score: 400
+clue: These are three examples of garbage collectors in OpenJDK.
+
+#
+category: Name that Release
+
+answer: What is Java 15
+attrib: anon
+score: 300
+clue: The long standing tool rmic was removed in this release
+
+answer: What is Java 14
+attrib: anon
+score: 300
+clue: This release said goodbye to Pack200
+
+answer: What is Java 13
+attrib: anon
+score: 300
+clue: Javadoc said goodbye to HTML4 support in this release
+
+answer: What is Java 12
+attrib: anon
+score: 300
+clue: FileInputStream lost its finalize method in this release
+
+answer: What is Java 10
+attrib: anon
+score: 300
+clue: Farewell Java plug-in this was the last release it was shipped
+
+answer: What is Java 11
+attrib: anon
+score: 300
+clue: java.corba failed to make this release
+
+answer: What is Java 6
+attrib: anon
+score: 300
+clue: jvisualvm was first shipped in this release
+
+answer: What is Java 5
+attrib: anon
+score: 300
+clue: @Annotations where introduced in this release
+
+answer: What is Java 1.5
+attrib: anon
+score: 400
+clue: This Java version changed the memory model.
+
+answer: What is Java 9
+attrib: anon
+score: 400
+clue: The Hotspot flag -XX:SafepointPollOffset was removed in this release
+
+answer: What is Java 16
+attrib: anon
+score: 400
+clue: The experimental tool jaotc was removed in this release
+
+answer: What is Java 7
+attrib: anon
+score: 400
+clue: The first release that allowed 0b00100001 as a value
+
+#
+category: OpenJDK
+
+answer: What is Jigsaw?
+attrib: Stuart Marks
+score: 100
+clue: This is the name of the project that introduced the module system.
+
+
+answer: What is Project Coin?
+attrib: Stuart Marks
+score: 200
+clue: This project introduced some small change into Java.
+
+answer: What is Verona? (or Project Verona)
+clue: The OpenJDK project to change the JDK version-string scheme was named after this Italian City.
+attrib: Stuart Marks
+score: 400
+
+
+
+answer: What is Penrose
+attrib: anon
+score: 400
+clue: Named after a famous Roger, this project explored interoperability between Jigsaw and OSGi
+
+
+answer: Who is Doug Lea?
+attrib: Stuart Marks
+clue: He's the author of a popular book "Concurrent Programming in Java" and he developed the java.util.concurrent package.
+score: 100
+
+answer: Who is Guy Steele?
+attrib: Stuart Marks
+score: 100
+clue: A veteran of programming language books on Lisp and C, he was one of the first editors of the Java Language Specification
+
+
+
+answer: What is NeWS?
+attrib: Stuart Marks
+score: 400
+clue: Widely regarded as the 'father of Java,' James Gosling developed this windowing system before he started developing Java.
+
+#
+category: Pot Luck
+
+
+answer: What is a WAR file?
+attrib: anon
+score: 100
+clue: This file type is used to distribute a collection of various resources that together constitute a web application such as JAR- Fules, Java Sclasses, static web-pages, Java Servlets etc
+
+answer: What is a Monolith
+attrib: anon
+score: 100
+clue: a 2001 inspired term for a particular Java architecture
+
+answer: What is Log4Shell
+attrib: anon
+score: 100
+clue: The colloquial term for the most impactful Java vulnerability so far
+
+answer: What is 'Java in a Nutshell'
+attrib: anon
+score: 100
+clue: This long running book series was useful, concise and might appeal to squirrels
+
+answer: what is serverless
+attrib: anon
+score: 300
+clue: a matrix inspired term applied to modern infrastructure.  There is no spoon
+
+answer: What is Duke
+attrib: anon
+score: 300
+clue: Something John Wayne and Java have in common
+
+answer: What is 2014
+attrib: anon
+score: 400
+clue: The year JavaFx 8 was released as a part of Java
+
+answer: what is OCA
+attrib: anon
+score: 400
+clue: public contributors to OpenJDK must sign this agreement
+
+#
+category: Map Airport to conference
+
+answer: What is Devnexus
+attrib: anon
+score: 100
+clue: ATL
+
+answer: What is SpringOne
+attrib: anon
+score: 100
+clue: SFO
+
+answer: What is JFokus
+attrib: anon
+score: 100
+clue: ARN
+
+answer: What is Devoxx UK
+attrib: anon
+score: 200
+clue: LHR
+
+answer: What is JavaOne
+attrib: anon
+score: 200
+clue: LAS
+
+answer: What is Java Day Istanbul
+attrib: anon
+score: 200
+clue: IST
+
+answer: What is Devoxx France
+attrib: anon
+score: 300
+clue: CDG
+
+answer: What is JNation
+attrib: anon
+score: 300
+clue: LIS
+
+answer: What is Geecon  or Devoxx Poland
+attrib: anon
+score: 300
+clue: KRK
+
+answer: What is Devoxx Belgium
+attrib: anon
+score: 400
+clue: BRU
+
+answer: What is JBCN
+attrib: anon
+score: 400
+clue: BCN
+
+answer: What is JavaZone
+attrib: anon
+score: 400
+clue: OSL
+
+answer: What is KOTLIN CONF
+attrib: anon
+score: 400
+clue: YUL
+
+#
+category: Star Wars 4J
+title: A Java starwars parody
+
+answer: What is WebSphere
+attrib: anon
+score: 300
+clue: This framework bears a stiking simularity to the DeathStar in name, scale and reputation
+
+answer: What is Jar
+attrib: anon
+score: 100
+clue: A bumbling Gungans first amd second names
+
+answer: What is java.lang.Cloneable
+attrib: anon
+score: 200
+clue: Do all stormtroopers implement this interface?
+
+answer: What is Joda Time
+attrib: anon
+score: 400
+clue: Even a small green Jedi has to take a break (maybe have a beer?)
+
+answer: What is OpenJDK
+attrib: anon
+score: 400
+clue: Like Coruscant this place is at core of the Java community and open to everybody

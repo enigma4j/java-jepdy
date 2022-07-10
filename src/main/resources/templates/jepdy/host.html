@@ -1,0 +1,59 @@
+{#include jepdy/outline}
+
+{#if !game}
+    <div><h1>No game</h1></div>
+{#else}
+
+<div id="modals-here"></div>
+
+<div class="col-lg-7 text-center text-lg-start">
+    <div class="display-5 fw-bold lh-1 mb-3">Game {game.name}</div>
+
+    <div id="grid">
+        {#include jepdy/includes/host_grid}{/include}
+    </div>
+</div>
+<hr>
+
+
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <button class="btn btn-warning"
+                    hx-post="/jepdy/secure/game/startgame?code={code}"
+                    hx-trigger="click"
+                    hx-target="#status"
+                    hx-swap="innerHTML">Start Game
+            </button>
+        </div>
+
+        <div class="col"><a class=" btn btn-primary">Update Game</a></div>
+        <div class="col">
+            <button class=" btn btn-primary"
+                    hx-post="/jepdy/secure/game/nextRound?code={code}"
+                    hx-trigger="click"
+                    hx-target="#grid"
+                    hx-swap="innerHTML"
+            >Next Round</button>
+        </div>
+        <div class="col">
+            <button class=" btn btn-primary"
+                    hx-post="/jepdy/secure/game/previousRound?code={code}"
+                    hx-trigger="click"
+                    hx-target="#grid"
+                    hx-swap="innerHTML"
+            >Previous Round</button>
+        </div>
+        <div class="col">
+            <button class=" btn btn-danger"
+                    hx-post="/jepdy/secure/game/endgame?code={code}"
+                    hx-trigger="click"
+                    hx-target="#status"
+                    hx-swap="innerHTML">End Game
+            </button>
+        </div>
+    </div>
+</div>
+</div>
+{/if}
+{/include}
