@@ -7,6 +7,9 @@ import java.io.IOException;
 
 public class JEPdyFileReader {
 
+    private static String allowedchars="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@£$%^&*()-_=+[]{}#'\"\\|;:``<>.,/? ";
+
+
     public static final Logger LOG = Logger.getLogger(JEPdyFileReader.class);
     private BufferedReader br;
     private int lc=0;
@@ -20,7 +23,18 @@ public class JEPdyFileReader {
         LOG.debugf("%d line read [%s]",lc,line);
         if(line==null) return null;
         lc++;
-        line=line.replaceAll("[^a-zA-Z0-9,\"':&#\\-+\\\\/\\.]", " ");
+        String sanitised=new String();
+        for(char c:line.toCharArray()) {
+            if(allowedchars.contains(""+c)) {
+                sanitised=sanitised+c;
+            }
+            else {
+                sanitised=sanitised+" ";
+            }
+        }
+        LOG.debugf("read %s",line);
+        LOG.debugf("now  %s",sanitised);
+        line=sanitised;
         line=line.trim();
         if(line.startsWith("#")) continue;
         if(skipblank && line.equals("")) continue;

@@ -1,5 +1,6 @@
 <div class="container-fluid">
     <div class="row">
+        {#if game.teams}
         {#for team in game.teams}
         <div class="col">
             <div class="card h-100">
@@ -11,5 +12,13 @@
             </div>
         </div>
         {/for}
+        {#else}
+        <h1>No teams</h1>
+        {/if}
+    </div>
+    <div class="row">
+        <div class="col-2"><img class="img-fluid"  src="/public/img/sponsors/ljc.jpeg"></img></div>
+        <div class="col-8"><h1 class="scorebox text-center">Round {game.currentRound}</h1></div>
+        <div class="col-2"><img class="img-fluid"  src="/public/img/sponsors/sonatype.jpeg"></img></div>
     </div>
 </div>

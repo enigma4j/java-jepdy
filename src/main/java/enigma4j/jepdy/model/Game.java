@@ -75,4 +75,26 @@ public class Game extends PanacheMongoEntity {
 
 
     }
+
+
+    public int leaderPoints() {
+        Team winner=null;
+        for(Team t:teams) {
+            if(winner==null || t.comparePoints(winner)>0) winner=t;
+        }
+
+        if(winner==null) return 0;
+        return winner.points;
+    }
+
+    public String leader() {
+        Team winner=null;
+        for(Team t:teams) {
+            if(winner==null || t.comparePoints(winner)>0) winner=t;
+        }
+
+        if(winner==null) return "undecided";
+        return winner.name;
+    }
+
 }
