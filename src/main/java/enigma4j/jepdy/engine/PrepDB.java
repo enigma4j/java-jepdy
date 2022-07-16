@@ -10,21 +10,28 @@ import enigma4j.jepdy.model.GameState;
 import enigma4j.jepdy.ui.forms.NewGameForm;
 import io.quarkus.runtime.Startup;
 
+import javax.annotation.PostConstruct;
 import javax.enterprise.context.ApplicationScoped;
 import javax.inject.Inject;
+
+import org.eclipse.microprofile.config.inject.ConfigProperty;
+
 import java.io.File;
 import java.time.Instant;
 import java.util.ArrayList;
 import java.util.Date;
 
 @Startup
-
+@ApplicationScoped
 public class PrepDB extends Enigma4JAbstractService {
 
 
-    public static File r=new File(System.getProperty("user.dir")+"/data/clues.txt");
+    @ConfigProperty(name = "quarkus.kubernetes.mounts.my-volume.path", defaultValue = "local")
+    String location;
 
-    public PrepDB() {
+    @PostConstruct
+    public void init() {
+        File r= (location != "local") ? new File(location) : new File(System.getProperty("user.dir")+"/data/clues.txt");
 
         if(r==null) return;
 
