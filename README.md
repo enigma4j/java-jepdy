@@ -1,6 +1,7 @@
 # java-jepdy
 Jeopardy inspired Java Quiz Game
 
+If you want to run a game at your group or conference [starts here](run-event.md).
 ## Getting started 
 
 ### Building & running 
