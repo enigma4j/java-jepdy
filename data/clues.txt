@@ -1233,31 +1233,36 @@ attrib: anon
 score: 400
 clue: YUL
 
+answer: What is J-Fall?
+attrib: Hanno Embregts
+score: 400
+clue: AMS
+
 #
 category: Star Wars 4J
 title: A Java starwars parody
 
-answer: What is WebSphere
+answer: What is WebSphere?
 attrib: anon
 score: 300
-clue: This framework bears a stiking simularity to the DeathStar in name, scale and reputation
+clue: This framework bears a striking simularity to the DeathStar in name, scale and reputation
 
-answer: What is Jar
+answer: What is Jar?
 attrib: anon
 score: 100
-clue: A bumbling Gungans first amd second names
+clue: A bumbling Gungans first and second names
 
-answer: What is java.lang.Cloneable
+answer: What is java.lang.Cloneable?
 attrib: anon
 score: 200
 clue: Do all stormtroopers implement this interface?
 
-answer: What is Joda Time
+answer: What is Joda Time?
 attrib: anon
 score: 400
 clue: Even a small green Jedi has to take a break (maybe have a beer?)
 
-answer: What is OpenJDK
+answer: What is OpenJDK?
 attrib: anon
 score: 400
 clue: Like Coruscant this place is at core of the Java community and open to everybody
