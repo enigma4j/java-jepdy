@@ -1266,3 +1266,13 @@ answer: What is OpenJDK?
 attrib: anon
 score: 400
 clue: Like Coruscant this place is at core of the Java community and open to everybody
+
+answer: What is c3p0?
+attrib: Hanno Embregts
+score: 400
+clue: Hello, I am a Java library that can help you manage database connections, human cyborg relations.
+
+answer: What is R2DBC?
+attrib: Hanno Embregts
+score: 400
+clue: Brings reactive programming APIs to relational databases, and comes with a lot of bleeping.
